@@ -25,6 +25,7 @@
 	"type": "module",
 	"dependencies": {
 		"firebase": "^10.3.1",
-		"firebase-admin": "^11.10.1"
+		"firebase-admin": "^11.10.1",
+		"flowbite-svelte": "^0.44.15"
 	}
 }

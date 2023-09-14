@@ -21,6 +21,7 @@
             <a href="/login" class="btn btn-primary">Get Started</a>
             <a href="/fireship" class="btn btn-secondary">Example Profile</a>
           {/if}
+          
         </div>
       </div>
     </div>

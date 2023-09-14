@@ -2,13 +2,14 @@
   import type { PageData } from "./$types";
   import { page } from '$app/stores';
   import { enhance } from "$app/forms";
+  import Navbar from "../edit/navbar.svelte";
 
 
   export let data: PageData;
 
 </script>
 
-
+<Navbar/>
 <main class="max-w-lg prose text-center mx-auto my-6">
 
   <p>Current Bio: <span class="text-info">{data.bio}</span></p>

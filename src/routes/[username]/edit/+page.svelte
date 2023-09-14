@@ -12,6 +12,7 @@
     updateDoc,
   } from "firebase/firestore";
   import { writable } from "svelte/store";
+  import Navbar from "./navbar.svelte";
 
   const icons = [
     "Twitter",
@@ -79,8 +80,9 @@
   }
 </script>
 
+<Navbar/>
 <main class="max-w-xl mx-auto">
-  <div class="navbar bg-base-100" />
+  
   {#if $userData?.username == $page.params.username}
     <h1 class="mx-2 text-2xl font-bold mt-8 mb-4 text-center">
       Edit your Profile
@@ -89,17 +91,19 @@
     <div class="text-center mb-8">
       <p>
         Profile Link:
-        <a href={`/${$userData?.username}`} class="link link-accent">
-          https://kung.foo/{$userData?.username}
+        <a
+          href={`/${$userData?.username}`}
+          class="link link-accent"
+        >
+          https://localhost:5173/{$userData?.username}
         </a>
       </p>
+      
     </div>
 
     <div class="text-center my-4">
       <a class="btn btn-outline btn-xs" href="/login/photo">Change photo</a>
-      <a class="btn btn-outline btn-xs" href={`/${$userData.username}/bio`}
-        >Edit Bio</a
-      >
+      
     </div>
 
     <form class="form-control">
@@ -141,6 +145,7 @@
           class="select select-sm"
           bind:value={$formData.icon}
         >
+
           {#each icons as icon}
             <option value={icon.toLowerCase()}>{icon}</option>
           {/each}
@@ -177,9 +182,7 @@
           class="btn btn-success block">Add Link</button
         >
 
-        <button type="button" class="btn btn-xs my-4" on:click={cancelLink}
-          >Cancel</button
-        >
+        <button type="button" class="btn btn-xs my-4" on:click={cancelLink}>Cancel</button>
       </form>
     {:else}
       <button
