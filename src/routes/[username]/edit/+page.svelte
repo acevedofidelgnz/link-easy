@@ -12,7 +12,6 @@
     updateDoc,
   } from "firebase/firestore";
   import { writable } from "svelte/store";
-  import Navbar from "./navbar.svelte";
 
   const icons = [
     "Twitter",
@@ -80,7 +79,6 @@
   }
 </script>
 
-<Navbar/>
 <main class="max-w-xl mx-auto">
   
   {#if $userData?.username == $page.params.username}

@@ -1,0 +1,36 @@
+[debug] [2023-09-17T02:52:14.582Z] ----------------------------------------------------------------------
+[debug] [2023-09-17T02:52:14.593Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HackerPC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-09-17T02:52:14.594Z] CLI Version:   12.5.4
+[debug] [2023-09-17T02:52:14.595Z] Platform:      win32
+[debug] [2023-09-17T02:52:14.596Z] Node Version:  v18.17.1
+[debug] [2023-09-17T02:52:14.599Z] Time:          Sat Sep 16 2023 22:52:14 GMT-0400 (hora estándar de Paraguay)
+[debug] [2023-09-17T02:52:14.600Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-17T02:52:15.357Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-17T02:52:15.361Z] > authorizing via signed-in user (acv2fidel@gmail.com)
+[debug] [2023-09-17T02:52:15.361Z] [iam] checking project sveltekit-b91cd for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2023-09-17T02:52:15.376Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sveltekit-b91cd:testIamPermissions [none]
+[debug] [2023-09-17T02:52:15.377Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sveltekit-b91cd:testIamPermissions x-goog-quota-user=projects/sveltekit-b91cd
+[debug] [2023-09-17T02:52:15.378Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sveltekit-b91cd:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2023-09-17T02:52:17.550Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sveltekit-b91cd:testIamPermissions 200
+[debug] [2023-09-17T02:52:17.550Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sveltekit-b91cd:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2023-09-17T02:52:17.554Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sveltekit-b91cd [none]
+[debug] [2023-09-17T02:52:20.697Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sveltekit-b91cd 200
+[debug] [2023-09-17T02:52:20.697Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sveltekit-b91cd {"projectId":"sveltekit-b91cd","projectNumber":"494832793042","displayName":"sveltekit","name":"projects/sveltekit-b91cd","resources":{"hostingSite":"sveltekit-b91cd","realtimeDatabaseInstance":"sveltekit-b91cd-default-rtdb","storageBucket":"sveltekit-b91cd.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_2a45087e-6e2d-4993-a8d4-f33acd4738c0"}
+[debug] [2023-09-17T02:52:20.698Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sveltekit-b91cd [none]
+[debug] [2023-09-17T02:52:21.296Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sveltekit-b91cd 200
+[debug] [2023-09-17T02:52:21.296Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sveltekit-b91cd {"projectId":"sveltekit-b91cd","projectNumber":"494832793042","displayName":"sveltekit","name":"projects/sveltekit-b91cd","resources":{"hostingSite":"sveltekit-b91cd","realtimeDatabaseInstance":"sveltekit-b91cd-default-rtdb","storageBucket":"sveltekit-b91cd.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_2a45087e-6e2d-4993-a8d4-f33acd4738c0"}
+[info] 
+   Thank you for trying our experimental support for Svelte on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-09-17T02:53:17.618Z] Error: ENOENT: no such file or directory, lstat 'C:\Users\HackerPC\Desktop\Fireship\SvelteKit\svelte-course\link-bio\C:\Users\HackerPC\Desktop\Fireship\SvelteKit\svelte-course\link-bio\.svelte-kit\output\server'
+[error] 
+[error] Error: An unexpected error has occurred.
