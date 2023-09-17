@@ -1,5 +1,4 @@
 import { initializeApp } from "firebase/app";
-import "firebase/auth";
 import { doc, getFirestore, onSnapshot } from "firebase/firestore";
 import { getAuth, onAuthStateChanged, type User } from "firebase/auth";
 import { getStorage } from "firebase/storage";
